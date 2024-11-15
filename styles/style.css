@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ededed;
+}
+/* navbar section  */
+.navbar .container-fluid{
+    display: flex;
+}
+.nav_right_item{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 20%;
+}
+.nav_right_item li{
+    list-style-type: none;
+}
+.nav_right_item li a{
+    text-decoration: none; 
+    color: #fff !important;
+    font-size: 22px;
+}
+
+/* for intro section  */
+#myIntro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myIntro_image img{
+    max-width: 100%;
+    object-fit: contain;
+    margin-left: 6%;
+}
+.myname{
+    font-size: 40px;
+}
+.mydesc{
+    font-weight: 500;
+}
+.name-container {
+    display: inline-block;
+    width: 65px; /* Set a fixed width that fits the name */
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: text-top;
+}
+
+.name {
+    /* display: inline-block;
+    border-right: 3px solid;
+    animation: renderText 3s steps(10, end) infinite; */
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid; /* Cursor effect */
+    animation: typing 5s steps(10, end) infinite;
+    color: darkturquoise;
+
+}
+
+@keyframes typing {
+    0%, 100% { width: 0; }
+    50% { width: 100%; }
+}
+ 
+
+.glow-on-hover {
+    width: 250px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    /* background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000); */
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+#myIntro .glow-on-hover a {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    font-size: 18px; 
+  }
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+ 
+/* #myIntro .btn {
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91C9FF;
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+  
+  #myIntro svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+  
+  #myIntro .btn:hover {
+    transition: 1s ease-in-out;
+    background: #4F95DA;
+  }
+  
+  #myIntro .btn:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  #myIntro .btn a {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+  } */
+  
