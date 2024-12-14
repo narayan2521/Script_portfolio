@@ -1,57 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyPortfolio</title>
-    <link rel="stylesheet" href="/styles/bootstrap.min.css">
-    <link rel="stylesheet" href="/styles/style.css">
-</head>
-<body>
-    <div class="Home_Container">
 
-        <nav class="navbar navbar-expand-lg navbar-light  text-white py-3" style="background-color: #2d394b;">
-            <div class="container-fluid">
-                <div class="col-md-4"> 
-                    <a class="navbar-brand text-white" href="#">Narayan</a>
-                </div>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse col-md-6" id="navbarSupportedContent">
-                <div class="nav_right_item text-white fw-bold">
-                    <li class="nav_right_items"><a href="#About">About</a></li>
-                    <li class="nav_right_items"><a href="#Experience">Experience</a></li>
-                    <li class="nav_right_items"><a href="#Contact">Contact</a></li>
-                    <li class="nav_right_items"><a href="#Projects">projects</a></li>
-                </div>
-                 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyPortfolio</title>
+  <link rel="stylesheet" href="/styles/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+  <div class="Home_Container">
+
+    <nav class="navbar navbar-expand-lg navbar-light  text-white py-3" style="background-color: #2d394b;">
+      <div class="container-fluid">
+        <div class="col-md-4">
+          <a class="navbar-brand text-white" href="#">Narayan 
+            <!-- <img src="./images/Logo_!.png" alt="" srcset="" width="30" height="30"> -->
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="navbar-toggler-icon" class="skill_1 col-md-4 skill"></div>
+        </button>
+        <div class="collapse navbar-collapse col-md-6" id="navbarSupportedContent">
+          <div class="nav_right_item text-white fw-bold">
+            <li class="nav_right_items"><a href="#AboutMe">About</a></li>
+            <li class="nav_right_items"><a href="#Experience">Experience</a></li>
+            <li class="nav_right_items"><a href="#contact">Contact</a></li>
+            <li class="nav_right_items"><a href="#Projects">projects</a></li>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <div id="myIntro" class="bg-dark text-white">
+        <div class="myIntro_content col-md-5 d-flex flex-column justify-content-center">
+          <h1 class="fw-bold myname">Hey,  
+            <span class="name-container">
+              <span class="name fw-bold skill_1">welcome!</span>
+             </span>
+            </h1>
+          <p class="mydesc">I'm Narayan
+             <!-- <span class="name-container">
+              <span class="name fw-bold skill_1 col-md-4 skill">Naraya</span>
+             </span> -->
+              , a web developer passionate about creating seamless digital experiences.
+          </p>
+          <div class="center">
+            <button class="glow-on-hover" type="button">
+              <a href="">Get My Career Overview</a>
+            </button>
+          </div>
+        </div>
+        <div class="myIntro_image col-md-5 text-center">
+          <img src="./images/my_intro.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark">
+      <div id="AboutMe" class="text-dark d-flex justify-content-center py-4">
+        <div class="myIntro_image col-md-4 text-left">
+          <img src="./images/Narayan.jpg" alt="">
+        </div>
+        <div class="myIntro_content col-md-6 d-flex flex-column justify-content-center">
+           <div class="myDetails">
+             <!-- <p>I am a highly skilled Software Design Engineer with 1.5 years of hands-on experience in frontend development, specializing in HTML, CSS, JavaScript, and React. My passion lies in crafting scalable, user-centric web solutions, from responsive e-commerce platforms to dynamic dashboards. Over my career, I have developed and enhanced multiple dashboards and websites, blending clean design with robust functionality. My expertise in JavaScript and React has enabled me to lead and contribute to key projects like the Phenom E Cloud and dashboards for leading brands like Audi, Skoda, and SEAT.</p>
+             <p>Beyond my technical skills, I am a learning-oriented professional who adapts quickly to new environments and technologies. Whether mentoring juniors, troubleshooting complex issues, or driving projects to completion, I thrive on solving challenges and delivering impactful results. I am currently focused on advancing my skills in both frontend and backend technologies to broaden my contributions and build innovative solutions for the future.</p> -->
+              <p>Hello, I’m Narayan Prasad, a highly skilled Software Design Engineer with 1.5 years of experience in frontend development. I specialize in HTML, CSS, JavaScript, and React, crafting scalable, responsive web solutions. I have worked on key projects like the Phenom E Cloud and dashboards for renowned brands such as Audi and Skoda, combining clean design with dynamic functionality.</p>
+              <p>A quick learner and adaptable professional, I enjoy solving challenges, mentoring juniors, and driving projects to completion. I am currently focused on enhancing my skills in frontend and backend technologies to create innovative and impactful web solutions.</p>
+            </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="skills_section py-5 bg-dark">
+      <h1 class="fw-bold text-center pb-4 text-light">Tech Skills</h1>
+      <div class="skills row">
+        <!-- <div class="skill_1 col-md-4 skill">HTML</div>
+        <div class="skill_2 col-md-4 skill">CSS</div> 
+        <div class="skill_3 col-md-4 skill">JavaScrit</div>
+        <div class="skill_4 col-md-4 skill">jQuery</div>
+        <div class="skill_5 col-md-4 skill">React</div>
+        <div class="skill_6 col-md-4 skill">Debugging</div> -->
+        
+        <div class="parent-skill col-md-2">
+          <div class="skill" id="skill1">
+              <div class="progress" data-progress="80">
+                  <span class="progress-number">0%</span>
+              </div>
+          </div>
+          <span class="title">HTML</span>
+      </div>
+
+      <div class="parent-skill col-md-2">
+          <div class="skill">
+              <div class="progress" data-progress="65">
+                  <span class="progress-number">0%</span>
+              </div>
+          </div>
+          <span class="title">Javascript</span>
+      </div>
+
+      <div class="parent-skill col-md-2">
+          <div class="skill">
+              <div class="progress" data-progress="50">
+                  <span class="progress-number">0%</span>
+              </div>
+          </div>
+          <span class="title">React</span>
+      </div>
+
+      <div class="parent-skill col-md-2">
+        <div class="skill">
+            <div class="progress" data-progress="80">
+                <span class="progress-number">0%</span>
+            </div>
+        </div>
+        <span class="title">JQuery</span>
+    </div>
+
+    <div class="parent-skill col-md-2">
+        <div class="skill">
+            <div class="progress" data-progress="65">
+                <span class="progress-number">0%</span>
+            </div>
+        </div>
+        <span class="title">Debugging</span>
+    </div>
+
+    <div class="parent-skill col-md-2">
+        <div class="skill">
+            <div class="progress" data-progress="50">
+                <span class="progress-number">0%</span>
+            </div>
+        </div>
+        <span class="title">Ajax</span>
+    </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact__container grid">
+        <div class="contact__data">
+          <h2 class="section__title-2">
+            <span>Contact Me.</span>
+          </h2>
+    
+          <p class="contact__description-1">
+            I will read all emails. Send me any
+            message you want and I'll get back to you.
+          </p>
+    
+          <p class="contact__description-2">
+            I need your <b>Name</b> and <b>Email Address</b>, but
+            you won't receive anything other than your reply.
+          </p>
+    
+          <div class="geometric-box"></div>
+        </div>
+    
+        <div class="contact__mail">
+          <h2 class="contact__title">
+            Send Me A Message
+          </h2>
+    
+          <form action="" class="contact__form" id="contact-form">
+            <div class="contact__group">
+              <div class="contact__box">
+                <input type="text" name="user_name" class="contact__input" id="name" required placeholder="Name">
+                <label for="name" class="contact__label">Name</label>
+              </div>
+    
+              <div class="contact__box">
+                <input type="email" name="user_email" class="contact__input" id="email" required placeholder="Email Address">
+                <label for="email" class="contact__label">Email Address</label>
               </div>
             </div>
-        </nav>
-
-        <section>
-            <div id="myIntro" class="bg-dark text-white">
-                 <div class="myIntro_content col-md-5 d-flex flex-column justify-content-center">
-                    <h1 class="fw-bold myname">Hey, welcome!</h1>
-                    <p class="mydesc">I'm <span class="name-container"><span class="name fw-bold">Narayan</span></span>, a web developer passionate about creating seamless digital experiences.</p>
-                    <div class="center"> 
-                      <button class="glow-on-hover" type="button"> 
-                        <a href="">Get My Career Overview</a>
-                      </button>
-                    </div>
-                   </div>
-                 <div class="myIntro_image col-md-5 text-center">
-                    <img src="./images/my_intro.png" alt="">
-                 </div>
-            </div>
-        </section>
-
-    </div>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/js/jquery-1.8.3.min.js" integrity="sha512-J9QfbPuFlqGD2CYVCa6zn8/7PEgZnGpM5qtFOBZgwujjDnG5w5Fjx46YzqvIh/ORstcj7luStvvIHkisQi5SKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/assets/css/bootstrap.min.css" integrity="sha512-UVQYZVYu7WhHEaO2xGEmc4/3F8ctnXt4jwfGl2MCIHKc95RMgYS8yfNJ3j6wUe0UGiTK0S3vcmh3Ml9h278x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-    <script src="/script/bootstrap.min.js"></script>
-    <script src="/script/main.js"></script>
+            <div class="contact__box">
+              <input type="text" name="user_subject" class="contact__input" id="subject" required placeholder="Subject">
+              <label for="subject" class="contact__label">Subject</label>
+            </div>
+    
+            <div class="contact__box contact__area">
+              <textarea name="user_message" id="message" class="contact__input" required placeholder="Message"></textarea>
+              <label for="message" class="contact__label">Message</label>
+            </div>
+    
+            <p class="contact__message" id="contact-message"></p>
+    
+            <button type="submit" class="contact__button button">
+              <i class="ri-send-plane-line"></i> Send Message
+            </button>
+          </form>
+        </div>
+    
+        <div class="contact__social">
+          <img src="assets/img/curved-arrow.svg" alt="" class="contact__social-arrow">
+    
+          <div class="contact__social-data">
+            <div>
+              <p class="contact__social-description-1">
+                Does not send emails
+              </p>
+    
+              <p class="contact__social-description-2">
+                Write me on my social networks
+              </p>
+            </div>
+    
+            <div class="contact__social-links">
+              <a href="https://www.facebook.com/" target="_blank" class="contact__social-link">
+                <i class="ri-facebook-circle-line"></i>
+              </a>
+    
+              <a href="https://www.instagram.com/" target="_blank" class="contact__social-link">
+                <i class="ri-instagram-line"></i>
+              </a>
+    
+              <a href="https://www.linkedin.com/" target="_blank" class="contact__social-link">
+                <i class="ri-linkedin-box-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/js/jquery-1.8.3.min.js"
+    integrity="sha512-J9QfbPuFlqGD2CYVCa6zn8/7PEgZnGpM5qtFOBZgwujjDnG5w5Fjx46YzqvIh/ORstcj7luStvvIHkisQi5SKw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/assets/css/bootstrap.min.css" integrity="sha512-UVQYZVYu7WhHEaO2xGEmc4/3F8ctnXt4jwfGl2MCIHKc95RMgYS8yfNJ3j6wUe0UGiTK0S3vcmh3Ml9h278x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <script src="/script/bootstrap.min.js"></script>
+  <script src="/script/main.js"></script>
 </body>
+
 </html>
